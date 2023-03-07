@@ -26,3 +26,5 @@ import {
          </box>
     </div>
   }
+
+  export default NavBar;
