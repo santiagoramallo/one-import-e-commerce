@@ -5,16 +5,16 @@ const ItemList = ({ lentes }) => {
   return (
     <>
       <Container className="main-catalogue">
-        {lentes?.map((lentes) => (
+        {lentes?.map((lente) => (
           <Item
-            key={lentes.id}
-            id={lentes.id}
-            name={lentes.name}
-            description={lentes.description}
-            price={lentes.price}
-            stock={lentes.stock}
-            category={lentes.category}
-            image={lentes.image}
+            key={lente.id}
+            id={lente.id}
+            name={lente.name}
+            description={lente.description}
+            price={lente.price}
+            stock={lente.stock}
+            category={lente.category}
+            image={lente.image}
           />
         ))}
       </Container>

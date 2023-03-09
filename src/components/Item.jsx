@@ -36,7 +36,7 @@ const Item = ({ id, name, stock, category, image }) => {
               <CardFooter className="card-footer">
                 <Center className="btn-center">
                   <Button variant="solid" colorScheme="blue">
-                    <Link to={`/item/${id}`}>Detalles</Link>
+                    <Link to={`/item/${id}`}>Details</Link>
                   </Button>
                 </Center>
               </CardFooter>

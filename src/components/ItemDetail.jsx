@@ -18,39 +18,39 @@ import {
   
     const [producto, setProducto] = useState([]);
 
-    const bikeFilter = lentes.filter((lentes) => lentes.id == id);
+    const lenteFilter = lentes.filter((lente) => lente.id == id);
 
   return (
     <>
-      {lentesFilter.map((lentes) => (
-        <div key={lentes.id}>
+      {lenteFilter.map((lente) => (
+        <div key={lente.id}>
           <Center p="1rem">
             <Card className="card-main">
               <CardBody>
-                <Image borderRadius="lg" src={lentes.image} />
+                <Image borderRadius="lg" src={lente.image} />
                 <Stack mt="6" spacing="3">
-                  <Heading size="md">{lentes.name}</Heading>
+                  <Heading size="md">{lente.name}</Heading>
                   <Text color="blue.800" fontSize="l">
-                    Descripcion: {lentes.description}
+                    Descripcion: {lente.description}
                   </Text>
                   <Text color="blue.800" fontSize="l">
-                    Categoria: {lentes.category}
+                    Categoria: {lente.category}
                   </Text>
                   <Text color="red.600" fontSize="xl">
-                    Stock: {lentes.stock}
+                    Stock: {lente.stock}
                   </Text>
                   <Text color="green.600" fontSize="xl">
-                    Precio: U$D {lentes.price}
+                    Precio: U$D {lente.price}
                   </Text>
                 </Stack>
               </CardBody>
               <Divider />
               <CardFooter className="card-footer">
                 <ItemCount
-                  stock={lentes.stock}
-                  id={lentes.id}
-                  price={lentes.price}
-                  name={lentes.name}
+                  stock={lente.stock}
+                  id={lente.id}
+                  price={lente.price}
+                  name={lente.name}
                 />
               </CardFooter>
             </Card>

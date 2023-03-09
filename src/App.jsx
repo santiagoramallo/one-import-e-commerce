@@ -1,14 +1,14 @@
-import React from 'react'
+import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
-import './App.css'
-import { ChakraProvider } from '@chakra-ui/react'
+import Welcome from "./components/Welcome";
+import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
 
 function App() {
   return (
-    <ChakraProvider>
+    <ShoppingCartProvider>
       <BrowserRoutes>
       <NavBar/>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRoutes>
-    </ChakraProvider>
+    </ShoppingCartProvider>
   );
 }
 

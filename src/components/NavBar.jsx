@@ -21,9 +21,9 @@ const NavBar = () => {
     <>
       <Container maxW="150rem" bg="blue.100" color="#262626">
         <Flex alignItems="center" gap="2">
-          <Avatar
+          <Image
             size="xl"
-            src="https://mejorconsalud.as.com/fitness/wp-content/uploads/2021/10/mujer-ciclista-entrena-competencia-1024x683.jpg"
+            src="./assets/Logotipo-One-import.jpg"
           />
           <Box p="10" w="300px" h="100">
             <Heading size="md">
@@ -63,8 +63,8 @@ const NavBar = () => {
                 <Link to={`/category/${"Oakley"}`}>
                   <MenuItem>Oakley</MenuItem>
                 </Link>
-                <Link to={`/category/${"Sol"}`}>
-                  <MenuItem>Sol</MenuItem>
+                <Link to={`/category/${"Otros"}`}>
+                  <MenuItem>Otros</MenuItem>
                 </Link>
               </MenuList>
             </Menu>
