@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from "./components/ItemDatailContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import './App.css'
