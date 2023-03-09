@@ -10,8 +10,6 @@ import {
     Divider,
   } from "@chakra-ui/react";
   import { useParams } from "react-router-dom";
-  import ItemCount from "./ItemCount";
-
   import { useEffect, useState } from "react";
 
   const ItemDetail = ({ lentes }) => {
@@ -23,7 +21,7 @@ import {
 
   return (
     <>
-      {bikeFilter.map((lentes) => (
+      {lentesFilter.map((lentes) => (
         <div key={lentes.id}>
           <Center p="1rem">
             <Card className="card-main">
