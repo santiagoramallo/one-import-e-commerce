@@ -10,6 +10,7 @@ import {
     Divider,
   } from "@chakra-ui/react";
   import { useParams } from "react-router-dom";
+  import ItemCount from "./ItemCount"; 
   import { useEffect, useState } from "react";
 
   const ItemDetail = ({ lentes }) => {
