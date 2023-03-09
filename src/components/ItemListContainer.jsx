@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const ItemListContainer = ({ saludo }) => {
     return ( <><div>
@@ -35,5 +35,23 @@ const ItemListContainer = ({ saludo }) => {
         </CardFooter>
       </Card></>
     )
+}; */
+
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
+
+const ItemListContainer = () => {
+  const [lentes, setBikes] = useState([]);
+  const { category } = useParams();
+
+  const catFilter = lentes.filter((bike) => lentes.categoria === category);
+
+  return (
+    <div>
+      {category ? <ItemList lentes={catFilter} /> : <ItemList lentes={lentes} />}
+    </div>
+  );
 };
+
 export default ItemListContainer;
