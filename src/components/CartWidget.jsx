@@ -12,7 +12,6 @@ const CartWidget = () => {
    <div className="cart">
         <Button size="lg" variant="outline" colorScheme="orange">
           <span className="material-symbols-outlined">shopping_cart</span>
-          <span>{quantity}</span>
         </Button>
       </div>
     </>

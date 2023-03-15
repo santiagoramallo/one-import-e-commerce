@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react'
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import {
@@ -14,6 +14,7 @@ import {
   Button,
   Avatar,
 } from "@chakra-ui/react";
+import { Image } from '@chakra-ui/react'
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {

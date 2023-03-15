@@ -5,22 +5,25 @@ import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import Welcome from "./components/Welcome";
 import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   return (
-    <ShoppingCartProvider>
-      <BrowserRoutes>
+      <ChakraProvider>
+  <ShoppingCartProvider>
+      <BrowserRouter>
       <NavBar/>
-        <Routes>
+        <Route>
           <Routes exact path="/" element={<Welcome />} />
           <Routes exact path="/catalogue" element={<ItemListContainer />} />
           <Routes 
           exact path="/category/:category" element={<ItemListContainer />} />
-          <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-          <Route exact path="/cart" element={<Cart />} />
-        </Routes>
-      </BrowserRoutes>
+          <Routes exact path="/item/:id" element={<ItemDetailContainer />} />
+          <Routes exact path="/cart" element={<Cart />} />
+        </Route>
+      </BrowserRouter>
     </ShoppingCartProvider>
+      </ChakraProvider>
   );
 }
 
